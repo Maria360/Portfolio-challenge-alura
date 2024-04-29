@@ -362,7 +362,7 @@ span {
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   gap: 1.8rem;
 }
@@ -396,3 +396,21 @@ span {
   height: 80px;
   width: 80px;
 }
+@media screen and (max-width: 600px) {
+  .skills .container {
+    margin: 0;
+    padding: 0;
+  }
+  .skills .container .row {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    padding: 2rem 0.2rem 2rem 0.2rem;
+    gap: 1rem;
+  }
+  .skills .container {
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+
+/* Education section vid 21:00 min */
