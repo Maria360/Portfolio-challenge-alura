@@ -392,6 +392,7 @@ span {
 }
 
 .skills .container .info img {
-  height: 80%;
-  width: 80%;
+  display: flex;
+  height: 80px;
+  width: 80px;
 }
