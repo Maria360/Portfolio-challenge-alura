@@ -331,7 +331,7 @@ span {
   margin-bottom: 1rem;
 }
 .service-info p {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   max-height: 100px;
   margin: auto;
@@ -363,7 +363,7 @@ span {
   background: var(--bg-color);
 }
 .skills .container {
-  background: #7c4bb74f;
+  /* background: #7c4bb74f; */
   color: var(--text-color);
   border-radius: 1rem;
   padding: 2rem;
@@ -382,12 +382,15 @@ span {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 1rem;
-  background: var(--bg-color);
+  border: 1px solid var(--main-color);
+  /* background: var(--bg-color); */
+  /* background: var(--main-color); */
+
   transition: 0.3s ease;
   cursor: pointer;
 }
 .skills .container .bar:hover {
-  box-shadow: 0 4px 10px var(--main-color);
+  /* box-shadow: 0 4px 10px var(--main-color); */
   transform: scale(1.03);
 }
 .skills .container .info {
@@ -508,6 +511,7 @@ span {
   background: var(--main-color);
   position: relative;
   border-radius: 6px;
+  padding: 16px 24px 16px 24px;
 }
 .education .content .tag {
   font-size: 1rem;
