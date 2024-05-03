@@ -17,5 +17,5 @@ Thank you for visiting! If you have any comments or collaboration inquiries, fee
 
 
 
-<img src="https://www.example.com/your_gif_file.gif](https://i.pinimg.com/originals/4b/fd/1a/4bfd1a7f0d9ae87669996a03074e9e8b.gif" alt="GIF" style="width: 100%;">
+<img src="https://i.pinimg.com/originals/4b/fd/1a/4bfd1a7f0d9ae87669996a03074e9e8b.gif" alt="GIF" style="width: 100%;">
 
