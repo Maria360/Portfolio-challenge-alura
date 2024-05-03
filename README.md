@@ -13,3 +13,7 @@ Please be aware that there's a contact form at the end of the website, but it's 
 Thank you for visiting! If you have any comments or collaboration inquiries, feel free to reach out to me at isagomezrodriguez05@gmail.com.
 
 *Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.* — Richard Feynman
+
+
+
+![Alt Text]([URL_of_your_gif_file](https://i.pinimg.com/originals/4b/fd/1a/4bfd1a7f0d9ae87669996a03074e9e8b.gif))
