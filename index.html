@@ -18,7 +18,7 @@
     <header class="header">
       <a href="#" class="logo">Maria</a>
 
-      <!-- <i class="fa-solid fa-bars" class="menu-icon"></i> -->
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
       <!-- <i class="fa-solid fa-bars menu-icon"></i> -->
 
       <nav class="navbar">
@@ -282,5 +282,14 @@
       </ul>
       <p class="copyright">&copy; 2024 | Maria Dev</p>
     </footer>
+
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navbar = document.querySelector(".navbar"); // Use querySelector to select the first .navbar element
+
+      menuIcon.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
