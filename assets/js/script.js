@@ -4,25 +4,26 @@ document.addEventListener("DOMContentLoaded", function () {
   //   let navbar = document.querySelector(".header");
 
   let sections = document.querySelectorAll("section");
-  let navLinks = document.querySelectorAll(".navbar a");
+  let navLinks = document.querySelectorAll("header nav ul li a");
 
   console.log(navLinks);
 
   window.onscroll = () => {
-    let scrollPos = window.scrollY;
+    // let top = window.scrollY;
 
     sections.forEach((sec) => {
-      let top = sec.offsetTop - 100;
-      let bottom = top + sec.offsetHeight;
+      let top = window.scrollY;
+      let offset = sec.offsetTop - 150;
+      let height = sec.offsetHeight;
       let id = sec.getAttribute("id");
 
-      if (scrollPos >= top && scrollPos < bottom) {
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
+      if (top >= offset && top < offset + height) {
+        navLinks.forEach((links) => {
+          links.classList.remove("active");
+          document
+            .querySelector("header nav ul li a[href='#" + id + "]")
+            .classList.add("active");
         });
-        document
-          .querySelector(".navbar a[href='#" + id + "']")
-          .classList.add("active");
       }
     });
   };
@@ -33,10 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // Smooth scrolling
-  navLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
+  navLinks.forEach((links) => {
+    links.addEventListener("click", (e) => {
       e.preventDefault();
-      let targetId = link.getAttribute("href");
+      let targetId = links.getAttribute("href");
       let targetElement = document.querySelector(targetId);
       if (targetElement) {
         targetElement.scrollIntoView({

@@ -25,12 +25,12 @@ body {
   color: var(--text-color);
 }
 html::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.8rem;
 }
 html::-webkit-scrollbar-track {
   background: var(--bg-color);
 }
-html::-webkit-scrollbar-button {
+html::-webkit-scrollbar-thumb {
   background: var(--main-color);
 }
 
