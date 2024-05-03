@@ -17,7 +17,7 @@
 }
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 body {
   background: var(--bg-color);
@@ -25,7 +25,7 @@ body {
   color: var(--text-color);
 }
 html::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 0.5rem;
 }
 html::-webkit-scrollbar-track {
   background: var(--bg-color);
@@ -326,12 +326,12 @@ span {
   padding: 5rem;
 }
 .service-info h4 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 .service-info p {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 400;
   max-height: 100px;
   margin: auto;
@@ -350,6 +350,12 @@ span {
   }
   .services-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .service-info h4 {
+    font-size: 2rem;
+  }
+  .service-info p {
+    font-size: 1.8rem;
   }
 }
 /* Skills section */
@@ -408,8 +414,8 @@ span {
     padding: 0;
   }
   .skills .container .row {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 2rem;
     padding: 2rem 0.2rem 2rem 0.2rem;
     gap: 1rem;
   }
@@ -432,7 +438,8 @@ span {
   content: "";
   position: absolute;
   width: 6px;
-  background: rgb(72, 55, 99);
+  background: var(--main-color);
+
   top: 0;
   bottom: 0;
   left: 50%;
@@ -446,7 +453,8 @@ span {
   width: 50%;
 }
 .education .container::after {
-  content: "\f501";
+  /* content: "\f501"; */
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -502,7 +510,8 @@ span {
   border-radius: 6px;
 }
 .education .content .tag {
-  font-size: 1.5rem;
+  font-size: 1rem;
+
   padding-top: 1.5rem;
   padding-left: 1.5rem;
 }
@@ -518,7 +527,7 @@ span {
   font-size: 1.2rem;
   font-weight: 500;
 }
-@media screen and (max-widht: 600px) {
+@media screen and (max-width: 600px) {
   .education .timeline {
     margin-top: 2rem;
   }
